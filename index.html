@@ -1,0 +1,114 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+    <img src="animasi2.png" width="1850" height="400">
+</div>
+
+<div class="w3-bar w3-orange">
+    <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Top')">Pengertian</button>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Jenis Switch</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Red Switch</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Left')">Blue Switch</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Right')">Silver Switch</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Opacity')">Black Switch</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Zoom')">Brown Switch</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="Home" class="w3-container kota w3-animate-bottom " style="display:block">
+   <center>
+   <h2>About Me</h2> 
+   <p>Nama : Ikhwan Fauzi Rahman</p>
+   <p>Nim : 10122500</p>
+      Kelas : IF-2
+
+    </p>
+   </div>
+
+<div id="Top" class="w3-container kota w3-animate-top" style="display:none">
+ <center>
+    <h2>Mechanical Keyboard</h2>
+    <hr>
+    <img src="a1.jpg" width="400">
+ <p>Keyboard mechanical merupakan jenis papan ketik yang diperkenalkan pada awal 2000an, komponen yang digunakan pada keyboard jenis ini 
+    berupa switch yang terpasang pada setiap kunci tombol. Apabila pengguna menekan tombol tersebut, maka akan menghasilkan bunyi 
+    seperti ketukan yang menandakan reaksi pada switch yang terletak di setiap bagian bawah tombol keyboard.  
+   </p>
+    
+    
+
+ </p>
+</div>
+
+<div id="Bottom" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center>
+       <h2>Red switch</h2>
+    <hr>
+       <img src="CHERRY_MX_RGB_RED-368x368.png" width="">
+    <p>switch yang teringat dan paling ringan dari semua switch, dan tidak akan mengeluarkan suara.
+    </p>
+   </div>
+
+<div id="Left" class="w3-container kota w3-animate-left" style="display:none">
+    <center>
+       <h2>Blue Switch</h2>
+       <hr>
+       <img src="CHERRY_MX_RGB_BLUE-368x368.png">
+    <p>switch yang akan mengeluarkan suara yang paling keras pada saat tombol di tekan, membuat suatu sensasi clicky.
+    </p>
+   </div>
+
+
+<div id="Right" class="w3-container kota w3-animate-Right" style="display:none">
+    <center>
+       <h2>Silver Switch</h2>
+       <hr>
+       <img src="CHERRY_MX_RGB_SPEED-368x368.png">
+    <p> Silver Switch ini juga akrab disebut sebagai Cherry MX Speed. 
+        Karakternya linear dengan pegas yang menekan lurus langsung dari atas ke bawah, namun dengan pegas yang lebih pendek dan ringan, 
+        memungkinkan kamu mencapai ‘titik aktuasi’ (yaitu titik capai ke sirkuit untuk mengirim sinyal) jauh lebih cepat.
+    </p>
+   </div>
+
+<div id="Opacity" class="w3-container kota w3-animate-opacity" style="display:none">
+    <center>
+       <h2>Black Switch</h2>
+       <hr>
+       <img src="CHERRY_MX_SILENT_RGB_BLACK-368x368.png">
+    <p>switch yang paling berat dari semua switch, dan relative tidak akan mengeluarkan suara.
+    </p>
+   </div>
+
+<div id="Zoom" class="w3-container kota w3-animate-zoom" style="display:none">
+    <center>
+       <h2>Brown Switch</h2>
+           <hr>
+       <img src="CHERRY_MX_RGB_BROWN-368x368.png">
+    <p>memiliki bobot yang ringan namun terdapat kesan clicky dan juga mengeluarkan suara yang 
+        lebih keras dari pada red akan tetapi akan lebih pelan jika di bandingkan dengan blue.
+    </p>
+   </div>   
+
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
